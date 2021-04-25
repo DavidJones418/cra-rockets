@@ -1,23 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
+import useSWR from 'swr';
 import './App.css';
 
+async function fetcher(url: string) {
+	const res = await fetch(url);
+	if (!res.ok) {
+		throw new Error(res.statusText);
+	}
+	return await res.json();
+}
+
 function App() {
+	const { data: launches } = useSWR('https://api.spacexdata.com/v4/launches', fetcher);
+
 	return (
 		<div className="App">
 			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<p>
-					Edit <code>src/App.tsx</code> and save to reload.
-				</p>
-				<a
-					className="App-link"
-					href="https://reactjs.org"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Learn React
-				</a>
+				<ol>
+					{launches?.map((launch: { id: string; name: string }) => (
+						<li key={launch.id}>{launch.name}</li>
+					))}
+				</ol>
 			</header>
 		</div>
 	);
