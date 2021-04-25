@@ -24,6 +24,8 @@ function App() {
 
 	const [filterYear, setFilterYear] = useState<number>(NaN);
 
+	const [sortDirection, setSortDirection] = useState(1);
+
 	return (
 		<div className="App">
 			<header className="App-header">
@@ -39,11 +41,16 @@ function App() {
 						</option>
 					))}
 				</select>
+				{sortDirection > 0 && <button onClick={() => setSortDirection(-1)}>Sort Descending</button>}
+				{sortDirection < 0 && <button onClick={() => setSortDirection(+1)}>Sort Ascending</button>}
 				<ol>
 					{launches
 						?.filter((launch) => !filterYear || getYear(launch) === filterYear)
-						.map((launch) => (
-							<li key={launch.id}>{launch.name}</li>
+						.sort((a, b) => sortDirection * (a.date_unix - b.date_unix))
+						.map((launch, i) => (
+							<li key={launch.id} data-testid={`launch-${i}`}>
+								<span>{launch.name}</span> <span>({launch.date_unix})</span>
+							</li>
 						))}
 				</ol>
 			</header>
