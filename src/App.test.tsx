@@ -10,9 +10,14 @@ const mockLaunches = [
 	{ id: 'ccccc', name: 'Mock 2008 Launch', date_unix: Number(new Date('2008-01-01')) / 1000 },
 ];
 
+const mockRockets = [{ name: 'Mock Rocket 1' }];
+
 export const server = setupServer(
 	rest.get('https://api.spacexdata.com/v4/launches', (req, res, ctx) => {
 		return res(ctx.status(200), ctx.json(mockLaunches));
+	}),
+	rest.get('https://api.spacexdata.com/v4/rockets', (req, res, ctx) => {
+		return res(ctx.status(200), ctx.json(mockRockets));
 	}),
 );
 
@@ -45,7 +50,7 @@ test('reload the data to see any new changes', async () => {
 		unsubscribe();
 	});
 
-	fireEvent.click(screen.getByText('Reload'));
+	fireEvent.click(screen.getByText('Reload Data'));
 
 	expect(cacheUpdated).toBe(true);
 });

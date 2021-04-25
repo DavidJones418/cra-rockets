@@ -1,0 +1,144 @@
+.App {
+	display: grid;
+	height: 100vh;
+	overflow: hidden;
+	gap: 1rem;
+	grid-template:
+		'header header   header' auto
+		'.      controls .     ' auto
+		'.      launches .     ' 1fr / minmax(4rem, auto) minmax(auto, 40rem) 4rem;
+	background-image: image-set(
+		url('./images/launch-home.png') 1x,
+		url('./images/launch-home@2x.png') 2x,
+		url('./images/launch-home@3x.png') 3x
+	);
+	background-position: center left 2rem;
+	background-size: 50vh;
+	background-repeat: no-repeat;
+}
+
+.header {
+	grid-area: header;
+	display: flex;
+	place-content: space-between;
+	place-items: center;
+	padding: 1rem 0;
+}
+
+.controls {
+	grid-area: controls;
+	display: grid;
+	grid-auto-flow: column;
+	place-content: end;
+	gap: 0.5rem;
+}
+
+.launches {
+	grid-area: launches;
+	display: grid;
+	align-content: start;
+	gap: 0.25rem;
+	margin: 0;
+	padding: 0.25rem;
+	list-style: none;
+	overflow-y: scroll;
+}
+
+.heading {
+	display: flex;
+	place-items: baseline;
+	padding: 0 2rem;
+	font-size: 1.25rem;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.headingLogo {
+	height: 1.25rem;
+	margin-right: -7%;
+}
+
+.reloadButton {
+	display: grid;
+	grid-auto-flow: column;
+	gap: 0.5rem;
+	border: none;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	padding-left: 1rem;
+	padding-right: 2.5rem;
+	cursor: pointer;
+	color: white;
+	background-color: var(--color-brand);
+	font-weight: 500;
+	place-items: center;
+	border-radius: 999px 0 0 999px;
+	background-image: image-set(
+		url('./icons/refresh.png') 1x,
+		url('./icons/refresh@2x.png') 2x,
+		url('./icons/refresh@3x.png') 3x
+	);
+	background-position: center right 1rem;
+	background-repeat: no-repeat;
+}
+.reloadButton:hover {
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.reloadButton:active {
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+		rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.filterSelect {
+	display: grid;
+	grid-auto-flow: column;
+	gap: 0.5rem;
+	border: none;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	padding-left: 1rem;
+	padding-right: 2.5rem;
+	cursor: pointer;
+	color: white;
+	background-color: var(--color-brand);
+	font-weight: 500;
+	place-items: center;
+	background-image: image-set(
+		url('./icons/select.png') 1x,
+		url('./icons/select@2x.png') 2x,
+		url('./icons/select@3x.png') 3x
+	) !important; /* override sanitize.css/forms.evergreen.css */
+	background-position: center right 1rem !important;
+	background-size: unset !important;
+	background-repeat: no-repeat;
+}
+
+.sortButton {
+	display: grid;
+	grid-auto-flow: column;
+	gap: 0.5rem;
+	border: none;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	padding-left: 1rem;
+	padding-right: 2.5rem;
+	cursor: pointer;
+	color: white;
+	background-color: var(--color-brand);
+	font-weight: 500;
+	place-items: center;
+	background-image: image-set(
+		url('./icons/sort.png') 1x,
+		url('./icons/sort@2x.png') 2x,
+		url('./icons/sort@3x.png') 3x
+	);
+	background-position: center right 1rem;
+	background-repeat: no-repeat;
+}
+.sortButton:hover {
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.sortButton:active {
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+		rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
