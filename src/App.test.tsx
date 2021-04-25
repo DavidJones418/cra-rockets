@@ -1,9 +1,8 @@
-import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('loads the full list of SpaceX launches from the SpaceX API', async () => {
 	render(<App />);
-	const linkElement = screen.getByText(/learn react/i);
-	expect(linkElement).toBeInTheDocument();
+	expect(await screen.findByText('Mock First Launch')).toBeInTheDocument();
+	expect(await screen.findByText('Mock Last Launch')).toBeInTheDocument();
 });
