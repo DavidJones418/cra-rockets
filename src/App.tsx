@@ -10,11 +10,12 @@ async function fetcher(url: string) {
 }
 
 function App() {
-	const { data: launches } = useSWR('https://api.spacexdata.com/v4/launches', fetcher);
+	const { data: launches, mutate } = useSWR('https://api.spacexdata.com/v4/launches', fetcher);
 
 	return (
 		<div className="App">
 			<header className="App-header">
+				<button onClick={() => mutate()}>Reload</button>
 				<ol>
 					{launches?.map((launch: { id: string; name: string }) => (
 						<li key={launch.id}>{launch.name}</li>
