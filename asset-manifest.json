@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/cra-rockets/static/css/main.0c0b8992.chunk.css",
-    "main.js": "/cra-rockets/static/js/main.281ad332.chunk.js",
-    "main.js.map": "/cra-rockets/static/js/main.281ad332.chunk.js.map",
+    "main.js": "/cra-rockets/static/js/main.3f71c2d8.chunk.js",
+    "main.js.map": "/cra-rockets/static/js/main.3f71c2d8.chunk.js.map",
     "runtime-main.js": "/cra-rockets/static/js/runtime-main.6fed19e2.js",
     "runtime-main.js.map": "/cra-rockets/static/js/runtime-main.6fed19e2.js.map",
-    "static/js/2.0838068a.chunk.js": "/cra-rockets/static/js/2.0838068a.chunk.js",
-    "static/js/2.0838068a.chunk.js.map": "/cra-rockets/static/js/2.0838068a.chunk.js.map",
+    "static/js/2.1ca2c5e7.chunk.js": "/cra-rockets/static/js/2.1ca2c5e7.chunk.js",
+    "static/js/2.1ca2c5e7.chunk.js.map": "/cra-rockets/static/js/2.1ca2c5e7.chunk.js.map",
     "static/js/3.d63758bc.chunk.js": "/cra-rockets/static/js/3.d63758bc.chunk.js",
     "static/js/3.d63758bc.chunk.js.map": "/cra-rockets/static/js/3.d63758bc.chunk.js.map",
     "index.html": "/cra-rockets/index.html",
     "static/css/main.0c0b8992.chunk.css.map": "/cra-rockets/static/css/main.0c0b8992.chunk.css.map",
-    "static/js/2.0838068a.chunk.js.LICENSE.txt": "/cra-rockets/static/js/2.0838068a.chunk.js.LICENSE.txt"
+    "static/js/2.1ca2c5e7.chunk.js.LICENSE.txt": "/cra-rockets/static/js/2.1ca2c5e7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.6fed19e2.js",
-    "static/js/2.0838068a.chunk.js",
+    "static/js/2.1ca2c5e7.chunk.js",
     "static/css/main.0c0b8992.chunk.css",
-    "static/js/main.281ad332.chunk.js"
+    "static/js/main.3f71c2d8.chunk.js"
   ]
 }
