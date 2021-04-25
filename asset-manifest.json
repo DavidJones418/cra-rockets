@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/cra-rockets/static/css/main.0c0b8992.chunk.css",
+    "main.js": "/cra-rockets/static/js/main.e7623563.chunk.js",
+    "main.js.map": "/cra-rockets/static/js/main.e7623563.chunk.js.map",
+    "runtime-main.js": "/cra-rockets/static/js/runtime-main.b533fb1e.js",
+    "runtime-main.js.map": "/cra-rockets/static/js/runtime-main.b533fb1e.js.map",
+    "static/js/2.fefcdd1c.chunk.js": "/cra-rockets/static/js/2.fefcdd1c.chunk.js",
+    "static/js/2.fefcdd1c.chunk.js.map": "/cra-rockets/static/js/2.fefcdd1c.chunk.js.map",
+    "static/js/3.30e3c95e.chunk.js": "/cra-rockets/static/js/3.30e3c95e.chunk.js",
+    "static/js/3.30e3c95e.chunk.js.map": "/cra-rockets/static/js/3.30e3c95e.chunk.js.map",
+    "index.html": "/cra-rockets/index.html",
+    "static/css/main.0c0b8992.chunk.css.map": "/cra-rockets/static/css/main.0c0b8992.chunk.css.map",
+    "static/js/2.fefcdd1c.chunk.js.LICENSE.txt": "/cra-rockets/static/js/2.fefcdd1c.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/cra-rockets/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b533fb1e.js",
+    "static/js/2.fefcdd1c.chunk.js",
+    "static/css/main.0c0b8992.chunk.css",
+    "static/js/main.e7623563.chunk.js"
+  ]
+}
