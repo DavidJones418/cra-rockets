@@ -1,0 +1,41 @@
+.Launch {
+	display: grid;
+	grid-template:
+		'number name date  ' min-content
+		'number name rocket' min-content / 6rem 1fr 8rem;
+	padding: 0.5rem 1rem;
+	align-items: center;
+	border-radius: 0.5rem;
+	background-color: hsl(0 0% 100% / 75%);
+	backdrop-filter: blur(10px);
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.number {
+	grid-area: number;
+	padding: 0.5rem;
+	font-size: 2rem;
+	font-weight: 500;
+}
+.number::before {
+	content: '#';
+}
+
+.name {
+	grid-area: name;
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+
+.date {
+	grid-area: date;
+	justify-self: right;
+	font-size: 1rem;
+}
+
+.rocket {
+	grid-area: rocket;
+	justify-self: right;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
