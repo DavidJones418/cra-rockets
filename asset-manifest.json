@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/cra-rockets/static/css/main.22f72161.css",
-    "main.js": "/cra-rockets/static/js/main.e6e6d83a.js",
-    "static/js/787.9b67a7d7.chunk.js": "/cra-rockets/static/js/787.9b67a7d7.chunk.js",
+    "main.js": "/cra-rockets/static/js/main.729b6eef.js",
+    "static/js/787.b0d89dcf.chunk.js": "/cra-rockets/static/js/787.b0d89dcf.chunk.js",
     "static/media/launch-home@3x.png": "/cra-rockets/static/media/launch-home@3x.8f2f8d9e2e6bf434ed7c.png",
     "static/media/launch-home@2x.png": "/cra-rockets/static/media/launch-home@2x.2ac07a63cc2b0dd3a5b7.png",
     "static/media/launch-home.png": "/cra-rockets/static/media/launch-home.b539e3f927856018804b.png",
@@ -24,11 +24,11 @@
     "static/media/spacex-logo.png": "/cra-rockets/static/media/spacex-logo.e755fcbfb1e385f990e4.png",
     "index.html": "/cra-rockets/index.html",
     "main.22f72161.css.map": "/cra-rockets/static/css/main.22f72161.css.map",
-    "main.e6e6d83a.js.map": "/cra-rockets/static/js/main.e6e6d83a.js.map",
-    "787.9b67a7d7.chunk.js.map": "/cra-rockets/static/js/787.9b67a7d7.chunk.js.map"
+    "main.729b6eef.js.map": "/cra-rockets/static/js/main.729b6eef.js.map",
+    "787.b0d89dcf.chunk.js.map": "/cra-rockets/static/js/787.b0d89dcf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.22f72161.css",
-    "static/js/main.e6e6d83a.js"
+    "static/js/main.729b6eef.js"
   ]
 }
