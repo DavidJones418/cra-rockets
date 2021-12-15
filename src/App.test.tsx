@@ -1,7 +1,7 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import { rest } from 'msw';
 import { setupServer } from 'msw/node';
-import { cache } from 'swr';
+import { SWRConfig } from 'swr';
 import App from './App';
 
 const mockLaunches = [
@@ -24,8 +24,6 @@ export const server = setupServer(
 // Establish API mocking before all tests.
 beforeAll(() => server.listen());
 
-afterEach(() => cache.clear());
-
 // Clean up after the tests are finished.
 afterAll(() => server.close());
 
@@ -37,22 +35,19 @@ test('load the full list of SpaceX launches from the SpaceX API', async () => {
 });
 
 test('reload the data to see any new changes', async () => {
-	render(<App />);
+	let cache = new Map();
+	render(
+		<SWRConfig value={{ provider: () => cache }}>
+			<App />
+		</SWRConfig>,
+	);
 	// Wait for the initial load to populate the SWR cache.
 	await screen.findByText('Mock 2006 Launch');
 
-	// Set a flag the next time the cache is updated when a refetch is requested.
-	// NOTE: this is a bit brittle, as the reload button really just invalidates
-	// the key in the SWR cache, relying on SWR to actually refetch the data.
-	let cacheUpdated = false;
-	const unsubscribe = cache.subscribe(() => {
-		cacheUpdated = true;
-		unsubscribe();
-	});
-
+	cache.clear();
 	fireEvent.click(screen.getByText('Reload Data'));
 
-	expect(cacheUpdated).toBe(true);
+	expect(cache).toEqual(new Map([['$req$https://api.spacexdata.com/v4/launches', true]]));
 });
 
 test('filter the launch list by year', async () => {
