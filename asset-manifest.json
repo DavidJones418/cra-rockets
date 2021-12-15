@@ -1,25 +1,34 @@
 {
   "files": {
-    "main.css": "/cra-rockets/static/css/main.33a1f983.chunk.css",
-    "main.js": "/cra-rockets/static/js/main.fd73e338.chunk.js",
-    "main.js.map": "/cra-rockets/static/js/main.fd73e338.chunk.js.map",
-    "runtime-main.js": "/cra-rockets/static/js/runtime-main.6ad744dd.js",
-    "runtime-main.js.map": "/cra-rockets/static/js/runtime-main.6ad744dd.js.map",
-    "static/js/2.1fc2a7e2.chunk.js": "/cra-rockets/static/js/2.1fc2a7e2.chunk.js",
-    "static/js/2.1fc2a7e2.chunk.js.map": "/cra-rockets/static/js/2.1fc2a7e2.chunk.js.map",
-    "static/js/3.79281662.chunk.js": "/cra-rockets/static/js/3.79281662.chunk.js",
-    "static/js/3.79281662.chunk.js.map": "/cra-rockets/static/js/3.79281662.chunk.js.map",
+    "main.css": "/cra-rockets/static/css/main.22f72161.css",
+    "main.js": "/cra-rockets/static/js/main.e6e6d83a.js",
+    "static/js/787.9b67a7d7.chunk.js": "/cra-rockets/static/js/787.9b67a7d7.chunk.js",
+    "static/media/launch-home@3x.png": "/cra-rockets/static/media/launch-home@3x.8f2f8d9e2e6bf434ed7c.png",
+    "static/media/launch-home@2x.png": "/cra-rockets/static/media/launch-home@2x.2ac07a63cc2b0dd3a5b7.png",
+    "static/media/launch-home.png": "/cra-rockets/static/media/launch-home.b539e3f927856018804b.png",
+    "static/media/BrandonGrotesque-Medium.ttf": "/cra-rockets/static/media/BrandonGrotesque-Medium.d63de10c98fa56ec611a.ttf",
+    "static/media/BrandonGrotesque-Regular.ttf": "/cra-rockets/static/media/BrandonGrotesque-Regular.135ec5ef3b44e1785fa4.ttf",
+    "static/media/BrandonGrotesque-Black.ttf": "/cra-rockets/static/media/BrandonGrotesque-Black.71e869dcfbe549a3602d.ttf",
+    "static/media/BrandonGrotesque-Bold.ttf": "/cra-rockets/static/media/BrandonGrotesque-Bold.82d02c69fef35bfcb3b2.ttf",
+    "static/media/BrandonGrotesque-RegularItalic.ttf": "/cra-rockets/static/media/BrandonGrotesque-RegularItalic.0b8ac7cb3025fba9a5f6.ttf",
+    "static/media/BrandonGrotesque-Medium.woff": "/cra-rockets/static/media/BrandonGrotesque-Medium.4629531ed02b00f70342.woff",
+    "static/media/BrandonGrotesque-Bold.woff": "/cra-rockets/static/media/BrandonGrotesque-Bold.870c0c41bfda7c657147.woff",
+    "static/media/BrandonGrotesque-Black.woff": "/cra-rockets/static/media/BrandonGrotesque-Black.7cfc1a090d7f350c31b2.woff",
+    "static/media/BrandonGrotesque-Regular.woff": "/cra-rockets/static/media/BrandonGrotesque-Regular.feb99ef87c94f69ba387.woff",
+    "static/media/BrandonGrotesque-RegularItalic.woff": "/cra-rockets/static/media/BrandonGrotesque-RegularItalic.762f1063323c247e337b.woff",
+    "static/media/BrandonGrotesque-Medium.woff2": "/cra-rockets/static/media/BrandonGrotesque-Medium.910d5a4f448902e5efa2.woff2",
+    "static/media/BrandonGrotesque-Bold.woff2": "/cra-rockets/static/media/BrandonGrotesque-Bold.a05097efc593782ccb09.woff2",
+    "static/media/BrandonGrotesque-Black.woff2": "/cra-rockets/static/media/BrandonGrotesque-Black.564b5758b2553e3093cf.woff2",
+    "static/media/BrandonGrotesque-Regular.woff2": "/cra-rockets/static/media/BrandonGrotesque-Regular.591bd2b98eed5cdcc998.woff2",
+    "static/media/BrandonGrotesque-RegularItalic.woff2": "/cra-rockets/static/media/BrandonGrotesque-RegularItalic.78a0e53160768207faf4.woff2",
+    "static/media/spacex-logo.png": "/cra-rockets/static/media/spacex-logo.e755fcbfb1e385f990e4.png",
     "index.html": "/cra-rockets/index.html",
-    "static/css/main.33a1f983.chunk.css.map": "/cra-rockets/static/css/main.33a1f983.chunk.css.map",
-    "static/js/2.1fc2a7e2.chunk.js.LICENSE.txt": "/cra-rockets/static/js/2.1fc2a7e2.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/cra-rockets/static/media/BrandonGrotesque-RegularItalic.78a0e531.woff2",
-    "static/media/App.module.css": "/cra-rockets/static/media/launch-home@3x.8f2f8d9e.png",
-    "static/media/spacex-logo.e755fcbf.png": "/cra-rockets/static/media/spacex-logo.e755fcbf.png"
+    "main.22f72161.css.map": "/cra-rockets/static/css/main.22f72161.css.map",
+    "main.e6e6d83a.js.map": "/cra-rockets/static/js/main.e6e6d83a.js.map",
+    "787.9b67a7d7.chunk.js.map": "/cra-rockets/static/js/787.9b67a7d7.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.6ad744dd.js",
-    "static/js/2.1fc2a7e2.chunk.js",
-    "static/css/main.33a1f983.chunk.css",
-    "static/js/main.fd73e338.chunk.js"
+    "static/css/main.22f72161.css",
+    "static/js/main.e6e6d83a.js"
   ]
 }
